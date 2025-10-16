@@ -1,12 +1,20 @@
+<div align="center">
+
+<img src="store-icon-128.svg" alt="Lie Detector Icon" width="128" height="128">
+
 # 🔍 Lie Detector - Chrome Extension
 
 [![Chrome Web Store](https://img.shields.io/badge/Chrome-Web%20Store-blue?logo=google-chrome)](https://chrome.google.com/webstore/detail/mgplnfjlklhgekpngckpclfddjlmhbep)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red.svg)](https://github.com)
 
-> AI-powered lie detection extension that helps you verify information in real-time while browsing the web using Google's Gemini AI.
+**AI-powered lie detection extension that helps you verify information in real-time while browsing the web using Google's Gemini AI.**
 
 [English](#english) | [العربية](#arabic)
+
+<img src="promo-large-1400x560.svg" alt="Lie Detector Promo" width="100%">
+
+</div>
 
 ---
 
@@ -74,14 +82,12 @@
 
 ## 📸 Screenshots
 
-![Extension Popup](screenshots/popup.png)
-*Configure your API key through the simple popup interface*
+<div align="center">
 
-![Lie Detection in Action](screenshots/checking.png)
-*Real-time indicators appear on web content*
+### Extension Interface
+<img src="promo-large-1400x560.svg" alt="Lie Detector Interface" width="80%">
 
-![Chat Interface](screenshots/chat.png)
-*Interactive chat with Gemini AI for detailed analysis*
+</div>
 
 ## 🛠️ Technical Details
 
@@ -151,13 +157,22 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 <a name="arabic"></a>
+
+<div align="center" dir="rtl">
+
+<img src="store-icon-128.svg" alt="أيقونة كاشف الهبد" width="128" height="128">
+
 # 🔍 كاشف الهبد - إضافة Chrome
 
 [![متجر Chrome](https://img.shields.io/badge/Chrome-Web%20Store-blue?logo=google-chrome)](https://chrome.google.com/webstore/detail/mgplnfjlklhgekpngckpclfddjlmhbep)
 [![الترخيص](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![مفتوح المصدر](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red.svg)](https://github.com)
 
-> إضافة لكشف الأكاذيب مدعومة بالذكاء الاصطناعي تساعدك على التحقق من المعلومات في الوقت الفعلي أثناء تصفح الويب باستخدام Gemini AI من Google.
+**إضافة لكشف الأكاذيب مدعومة بالذكاء الاصطناعي تساعدك على التحقق من المعلومات في الوقت الفعلي أثناء تصفح الويب باستخدام Gemini AI من Google.**
+
+<img src="promo-large-1400x560.svg" alt="كاشف الهبد" width="100%">
+
+</div>
 
 ## 🌟 المميزات
 
@@ -222,14 +237,12 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📸 لقطات الشاشة
 
-![نافذة الإضافة](screenshots/popup.png)
-*قم بتكوين مفتاح API الخاص بك من خلال واجهة بسيطة*
+<div align="center">
 
-![كشف الأكاذيب أثناء العمل](screenshots/checking.png)
-*تظهر المؤشرات في الوقت الفعلي على محتوى الويب*
+### واجهة الإضافة
+<img src="promo-large-1400x560.svg" alt="واجهة كاشف الهبد" width="80%">
 
-![واجهة المحادثة](screenshots/chat.png)
-*محادثة تفاعلية مع Gemini AI للتحليل التفصيلي*
+</div>
 
 ## 🛠️ التفاصيل التقنية
 
