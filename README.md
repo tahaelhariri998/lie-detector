@@ -82,14 +82,21 @@
 
 ## 📸 Screenshots
 
-![Extension Popup](screenshots/popup.png)
+<div align="center">
+
+<img src="screenshots/popup.png" alt="Extension Popup" width="600">
+
 *Configure your API key through the simple popup interface*
 
-![Lie Detection in Action](screenshots/checking.png)
+<img src="screenshots/checking.png" alt="Lie Detection in Action" width="600">
+
 *Real-time indicators appear on web content*
 
-![Chat Interface](screenshots/chat.png)
+<img src="screenshots/chat.png" alt="Chat Interface" width="600">
+
 *Interactive chat with Gemini AI for detailed analysis*
+
+</div>
 
 ## 🛠️ Technical Details
 
@@ -239,14 +246,21 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📸 لقطات الشاشة
 
-![نافذة الإضافة](screenshots/popup.png)
+<div align="center">
+
+<img src="screenshots/popup.png" alt="نافذة الإضافة" width="600">
+
 *قم بتكوين مفتاح API الخاص بك من خلال واجهة بسيطة*
 
-![كشف الأكاذيب أثناء العمل](screenshots/checking.png)
+<img src="screenshots/checking.png" alt="كشف الأكاذيب أثناء العمل" width="600">
+
 *تظهر المؤشرات في الوقت الفعلي على محتوى الويب*
 
-![واجهة المحادثة](screenshots/chat.png)
+<img src="screenshots/chat.png" alt="واجهة المحادثة" width="600">
+
 *محادثة تفاعلية مع Gemini AI للتحليل التفصيلي*
+
+</div>
 
 ## 🛠️ التفاصيل التقنية
 
