@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Lie Detector - كاشف الهبد",
-  "version": "1.0",
+  "version": "1.1",
   "description": "AI-powered lie detection | كشف المعلومات المضللة | Yalan tespiti",
   "permissions": ["storage", "activeTab"],
   "action": {
