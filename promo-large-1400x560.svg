@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560">
+  <defs>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="560" fill="url(#mainGrad)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="1200" cy="100" r="120" fill="white" opacity="0.06"/>
+  <circle cx="200" cy="450" r="80" fill="white" opacity="0.06"/>
+  <circle cx="1300" cy="480" r="60" fill="white" opacity="0.05"/>
+  
+  <!-- Main icon - Large magnifying glass -->
+  <g transform="translate(200, 200)">
+    <circle cx="0" cy="0" r="90" fill="none" stroke="white" stroke-width="14" opacity="0.95" filter="url(#shadow)"/>
+    <circle cx="0" cy="0" r="65" fill="white" opacity="0.12"/>
+    <line x1="64" y1="64" x2="120" y2="120" stroke="white" stroke-width="18" stroke-linecap="round" opacity="0.95" filter="url(#shadow)"/>
+    <path d="M -25 0 L -8 20 L 30 -25" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  </g>
+  
+  <!-- Main heading -->
+  <text x="420" y="180" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">Lie Detector</text>
+  <text x="420" y="235" font-family="Arial, sans-serif" font-size="38" fill="white" opacity="0.95">كاشف الهبد - Yalan Dedektörü</text>
+  
+  <!-- Subtitle -->
+  <text x="420" y="295" font-family="Arial, sans-serif" font-size="28" fill="white" opacity="0.9">AI-Powered Fact Checking with Google Gemini</text>
+  
+  <!-- Features list -->
+  <g transform="translate(420, 340)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="22" fill="white" opacity="0.85">✓ Instant verification of any text on any webpage</text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="22" fill="white" opacity="0.85">✓ Multi-language support: English, Arabic, Turkish</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="22" fill="white" opacity="0.85">✓ Interactive AI chat for deeper insights</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="22" fill="white" opacity="0.85">✓ Smart caching for instant results</text>
+  </g>
+  
+  <!-- Call to action badges -->
+  <g transform="translate(420, 500)">
+    <rect width="180" height="45" rx="22" fill="white" opacity="0.25"/>
+    <text x="90" y="30" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="700">Get Started</text>
+  </g>
+  <g transform="translate(620, 500)">
+    <rect width="180" height="45" rx="22" fill="white" opacity="0.15"/>
+    <text x="90" y="30" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="600">Free to Use</text>
+  </g>
+  
+  <!-- Small icons showcase -->
+  <g transform="translate(1050, 200)">
+    <!-- Safe icon -->
+    <circle cx="0" cy="0" r="35" fill="white" opacity="0.2"/>
+    <circle cx="0" cy="0" r="30" fill="#38ef7d" opacity="0.9"/>
+    <text x="0" y="12" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle">✓</text>
+    
+    <!-- Warning icon -->
+    <circle cx="100" cy="0" r="35" fill="white" opacity="0.2"/>
+    <circle cx="100" cy="0" r="30" fill="#ff6a00" opacity="0.9"/>
+    <text x="100" y="12" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle">⚠</text>
+    
+    <!-- Chat icon -->
+    <circle cx="200" cy="0" r="35" fill="white" opacity="0.2"/>
+    <circle cx="200" cy="0" r="30" fill="#667eea" opacity="0.9"/>
+    <text x="200" y="12" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle">💬</text>
+  </g>
+</svg>

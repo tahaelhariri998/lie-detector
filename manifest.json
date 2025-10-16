@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Lie Detector - كاشف الهبد",
+  "version": "1.0",
+  "description": "AI-powered lie detection | كشف المعلومات المضللة | Yalan tespiti",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.svg",
+      "48": "icon.svg",
+      "128": "icon.svg"
+    }
+  },
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

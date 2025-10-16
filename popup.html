@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      width: 350px; 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+    }
+    .container { background: white; }
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h2 { font-size: 18px; margin-bottom: 5px; }
+    .header p { font-size: 12px; opacity: 0.9; }
+    .content { padding: 20px; }
+    .section { margin-bottom: 20px; }
+    .section-title { 
+      font-size: 13px; 
+      font-weight: 600; 
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .toggle-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      background: #f5f5f5;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .toggle-label { font-size: 13px; font-weight: 500; }
+    .toggle {
+      position: relative;
+      width: 44px;
+      height: 24px;
+      background: #ccc;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .toggle.active { background: #667eea; }
+    .toggle::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+      transition: 0.3s;
+    }
+    .toggle.active::after { left: 22px; }
+    .input-group { margin-bottom: 12px; }
+    .input-group label { 
+      display: block; 
+      font-size: 12px; 
+      margin-bottom: 5px;
+      color: #666;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    .input-group input:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); }
+    .btn-secondary {
+      background: #f5f5f5;
+      color: #666;
+      margin-top: 8px;
+    }
+    .btn-secondary:hover { background: #e0e0e0; }
+    .status {
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .status.success { background: #d4edda; color: #155724; }
+    .status.error { background: #f8d7da; color: #721c24; }
+    .lang-selector {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+    .lang-btn {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      background: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: 0.3s;
+    }
+    .lang-btn.active {
+      background: #667eea;
+      color: white;
+      border-color: #667eea;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .stat-box {
+      background: #f5f5f5;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .stat-value { font-size: 20px; font-weight: 700; color: #667eea; }
+    .stat-label { font-size: 11px; color: #666; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2 id="appTitle">🕵️ Lie Detector</h2>
+      <p>Powered by Gemini AI</p>
+    </div>
+    
+    <div class="content">
+      <div class="section">
+        <div class="lang-selector">
+          <button class="lang-btn active" data-lang="en">English</button>
+          <button class="lang-btn" data-lang="ar">العربية</button>
+          <button class="lang-btn" data-lang="tr">Türkçe</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="status">Status</div>
+        <div class="toggle-container">
+          <span class="toggle-label" data-i18n="extension">Extension</span>
+          <div class="toggle active" id="extensionToggle"></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="apiKey">API Key</div>
+        <div class="input-group">
+          <label data-i18n="enterKey">Enter your Gemini API Key</label>
+          <input type="password" id="apiKey" placeholder="AIza...">
+        </div>
+        <button class="btn btn-primary" id="saveKey" data-i18n="save">Save</button>
+        <button class="btn btn-secondary" id="clearCache" data-i18n="clearCache">Clear Cache</button>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="statistics">Statistics</div>
+        <div class="stats">
+          <div class="stat-box">
+            <div class="stat-value" id="checksCount">0</div>
+            <div class="stat-label" data-i18n="checks">Checks</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value" id="misleadingCount">0</div>
+            <div class="stat-label" data-i18n="misleading">Misleading</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="status"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
